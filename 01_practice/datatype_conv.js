@@ -68,13 +68,19 @@
 // console.log(booleanisLoggedIn);
 // console.log(typeof booleanisLoggedIn);
 
-// let isLoggedIn = ""
-// console.log(isLoggedIn);
-// console.log(typeof isLoggedIn);
+//  let isLoggedIn = ""
 // let boolienisLoggedIn = Boolean(isLoggedIn)
 // console.log(boolienisLoggedIn);
 // console.log(typeof boolienisLoggedIn);
 
 // let isLoggedIn = "madhu"
-// console.log(isLoggedIn);
-// console.log(typeof isLoggedIn);
+// let booleanislogged = Boolean(isLoggedIn)
+// console.log(booleanislogged);
+// 1=>true; 0 => false;
+// "" => false; 
+// "madhu" => true
+
+// let someNumber = 33
+// let stringNumber = String(someNumber)
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
