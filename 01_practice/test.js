@@ -1,16 +1,16 @@
 console.log("madhu");
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let evenNumbers = [];
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let evenNumbers = [];
 
-for (let i = 0; i < numbers.length; i++) {
+// for (let i = 0; i < numbers.length; i++) {
     //console.log(numbers[i]);
     // console.log(numbers.length);
     //console.log(numbers[i] % 3 === 0);
     // if (numbers[i] % 2 === 0) {
     //     evenNumbers.push(numbers[i]);
     // }
-}
+// }
 
 //console.log(evenNumbers);
 
