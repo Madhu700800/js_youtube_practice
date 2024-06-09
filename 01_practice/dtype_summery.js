@@ -5,7 +5,8 @@
 
 
 // const score = 100;
-// const scoreValue = 100.2;
+//  const scoreValue = 100.2;
+// console.log(typeof scoreValue);
 
 //  const isLoggedINn = false;
 //  let outsideTemp = null;
@@ -21,6 +22,19 @@
 
 //Reference(Non Primitive)
 
-// Array, Object,Boolean
+// Array, Object,Function
 
 
+const hero = ["Shaktiman","naagraj","doga"];
+ const myObj = {
+    name: "Madhu",
+    age:29
+ }
+ const myFunction = function () {
+    console.log("Hello my greatness Life");
+ }
+
+//  console.log(typeof myFunction);
+//  console.log(typeof hero);
+
+// read***********https://262.ecma-international.org/5.1/#sec-11.4.3
