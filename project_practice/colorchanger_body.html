@@ -45,23 +45,20 @@
             height: 100px;
             border: 1px solid black;
         }
-        #box1{
+        
+        #gray{
            
             background-color: #dbdada;
         }
-        #box1{
-           
-            background-color: #dbdada;
-        }
-        #box2{
+        #white{
            
             background-color: #fafafa;
         }
-        #box3{
+        #blue{
            
             background-color: #09044d;
         }
-        #box4{
+        #yellow{
            
             background-color: #ebdb07;
         }
@@ -70,18 +67,47 @@
 <body>
     <h1><span id="color1">Col_</span><span id="color2">our_</span><span id="color3">Cha_</span><span id="color4">nger</span></h1>
     <div class="colorchanger-box">
-        <div class="colorclick" id="box1"></div>
-        <div class="colorclick" id="box2"></div>
-        <div class="colorclick" id="box3"></div>
-        <div class="colorclick" id="box4"></div>
+        <div class="colorclick" id="gray"></div>
+        <div class="colorclick" id="white"></div>
+        <div class="colorclick" id="blue"></div>
+        <div class="colorclick" id="yellow"></div>
+        <div class="colorclick" id="purple"></div>
     </div>
 </body>
 
 
 <script>
-let selectcolor = document.querySelectorAll(".colorchanger-box");
-console.log(selectcolor);
-let bodychangeclr = document.querySelector('body')
-console.log(bodychangeclr);
+let selectcolor = document.querySelectorAll(".colorclick");
+// console.log(selectcolor);
+let bodychangeclr = document.querySelector("body")
+// console.log(bodychangeclr);
+selectcolor.forEach(function(btnclr){
+// console.log(btnclr);
+btnclr.addEventListener('click', function(e){
+    // console.log(e);
+    // console.log(e.target);
+    if(e.target.id === "gray"){
+        console.log(e.target.id);
+        bodychangeclr.style.backgroundColor = e.target.id;
+    }
+    if(e.target.id === "white"){
+        console.log(e.target.id);
+        bodychangeclr.style.backgroundColor = e.target.id;
+    }
+    if(e.target.id === "blue"){
+        console.log(e.target.id);
+        bodychangeclr.style.backgroundColor = e.target.id;
+    }
+    if(e.target.id === "yellow"){
+        console.log(e.target.id);
+        bodychangeclr.style.backgroundColor = e.target.id;
+    }
+    if(e.target.id === "purple"){
+        console.log(e.target.id);
+        bodychangeclr.style.backgroundColor = e.target.id;
+    }
+})
+
+})
 </script>
 </html>
