@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            background-color: floralwhite;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #color1{
+            color: rgba(5, 5, 83, 0.877);
+            margin-right: 2px;
+        }
+        #color2{
+            color: rgb(18, 122, 18);
+            margin-right: 6px;
+        }
+        #color3{
+            color: rgb(126, 22, 22);
+            margin-right: 6px;
+        }
+        #color4{
+            color: rgb(207, 207, 33);
+            margin-right: 6px;
+        }
+        .colorchanger-box{
+            display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 8rem;
+        }
+        .colorclick{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        
+        #gray{
+           
+            background-color: #dbdada;
+        }
+        #white{
+           
+            background-color: #fafafa;
+        }
+        #blue{
+           
+            background-color: #09044d;
+        }
+        #yellow{
+           
+            background-color: #ebdb07;
+        }
+    </style>
+</head>
+<body>
+    <h1><span id="color1">Col_</span><span id="color2">our_</span><span id="color3">Cha_</span><span id="color4">nger</span></h1>
+    <div class="colorchanger-box">
+        <div class="colorclick" id="gray"></div>
+        <div class="colorclick" id="white"></div>
+        <div class="colorclick" id="blue"></div>
+        <div class="colorclick" id="yellow"></div>
+        <div class="colorclick" id="purple"></div>
+    </div>
+</body>
+
+
+<script>
+document.querySelector('.colorchanger-box').addEventListener('click' , function(e){
+// console.log(e.target);
+if(e.target.id === "gray"){
+    document.querySelector("body").style.backgroundColor = "gray";
+}
+else if(e.target.id === "white"){
+    document.querySelector("body").style.backgroundColor = "white";
+}
+else if(e.target.id === "blue"){
+    document.querySelector("body").style.backgroundColor = "blue";
+}
+else if(e.target.id === "yellow"){
+    document.querySelector("body").style.backgroundColor = "yellow";
+}
+else if(e.target.id === "purple"){
+    document.querySelector("body").style.backgroundColor = "purple";
+}
+})
+</script>
+</html>
